@@ -93,20 +93,24 @@ body {
     z-index: 2;
 }
 
-.social-icons a i.fa-facebook {
-    color: #4267B2;
-}
-
-.social-icons a i.fa-instagram {
+.social-icons a i.bxl-instagram {
     color: #E4405F;
 }
 
-.social-icons a i.fa-linkedin {
+.social-icons a i.bxl-linkedin-square {
     color: #0077B5;
 }
 
-.social-icons a i.fa-youtube {
+.social-icons a i.bxl-youtube {
     color: #FF0000;
+}
+
+.social-icons a i.bxl-whatsapp {
+    color: #00ff0d;
+}
+
+.social-icons a i.bxl-gmail {
+    color: #cf0c0c;
 }
 
 /* Footer */
