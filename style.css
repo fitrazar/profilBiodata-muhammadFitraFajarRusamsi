@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222222;
+    font-family: 'Poppins', sans-serif;
+}
+
+.box {
+    border: 0px solid #322653;
+    background-color: #322653;
+    border-radius: 50%;
+    margin-top: 10px;
+    height: 270px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        box-shadow: 0 0 10px #322653, 0 0 20px #322653, 0 0 30px #322653, 0 0 40px #322653, 0 0 50px #322653, 0 0 60px #322653, 0 0 70px #322653;
+    }
+
+    to {
+        box-shadow: 0 0 20px #5c4699, 0 0 30px #5c4699, 0 0 40px #5c4699, 0 0 50px #5c4699, 0 0 60px #5c4699, 0 0 70px #5c4699, 0 0 80px #5c4699;
+    }
+}
+
+.me {
+    margin-top: -150px;
+    margin-left: 15px;
+}
+
+.card-custom {
+    max-width: 300px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    max-width: 500px;
+    height: 170px;
+    padding: 35px;
+    border: 1px solid #322653;
+    border-radius: 20px;
+    background-color: #322653;
+}
+
+.card-custom-footer {
+    font-size: 0.65em;
+    color: rgb(241, 241, 241);
+}
+
+#home {
+    margin-bottom: 50px;
+}
+
+#about {
+    margin-top: 200px;
+}
+
+#skills {
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+#projects {
+    margin-top: 150px;
+}
+
+
+/* Social Media */
+
+.social-icons a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 24px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-icons a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 120%;
+    height: 120%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+}
+
+.social-icons a:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.social-icons a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-icons a i {
+    position: relative;
+    z-index: 2;
+}
+
+.social-icons a i.fa-facebook {
+    color: #4267B2;
+}
+
+.social-icons a i.fa-instagram {
+    color: #E4405F;
+}
+
+.social-icons a i.fa-linkedin {
+    color: #0077B5;
+}
+
+.social-icons a i.fa-youtube {
+    color: #FF0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #322653;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    color: #dfdfdf;
+    font-size: 14px;
+}
+
+.footer p {
+    margin: 0;
+}
